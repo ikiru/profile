@@ -24,15 +24,16 @@ img:hover + .text{
 /*#ID*/
 
 #pane-5 {
-  background-color: black;
+
+  background: linear-gradient(black 50%,skyblue);
 }
 
 #pane-4 {
-  background-color: skyblue;
+  background: linear-gradient(skyblue 50%, green 10%, brown);
 }
 
 #pane-3 {
-  background-color: green;
+  background: linear-gradient(brown, blue);
 }
 
 #pane-2 {
@@ -40,7 +41,8 @@ img:hover + .text{
 }
 
 #pane-1 {
-  background-color: darkblue;
+  background: linear-gradient(blue,Darkblue);
+
 }
 
 
@@ -114,7 +116,6 @@ display: none;
   width: 200px;
   height: auto;
   display: block;
-  margin-top: 60px;
 }
 
 .man {
