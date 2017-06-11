@@ -1,31 +1,135 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
 
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+img:hover + .text{
+  width: 300px;
+  height: auto;
+  border: 1px;
+  color: black;
+  background-color: beige;
+  box-sizing: content-box;
+  box-shadow:
+}
 
 
 /*tags*/
 
 
-
-
 /*#ID*/
 
+#pane-5 {
+  background-color: black;
+}
 
+#pane-4 {
+  background-color: skyblue;
+}
+
+#pane-3 {
+  background-color: green;
+}
+
+#pane-2 {
+  background-color: blue;
+}
+
+#pane-1 {
+  background-color: darkblue;
+}
 
 
 /*.class*/
+
+.panelCon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.panel {
+  width: 100%;
+}
+
+.panel h1 {
+  width: 100px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+}
+
+.menu {
+  position: fixed;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+}
+
+.text {
+display: none;
+
+}
+
+/*Animation*/
+
+.man, .cloud1, .cloud2, .balloon .moon .ufo{
+  position: absolute;
+}
+
+.moon img{
+  width: 200px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+
+.ufo img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
 
 .cloud1 img {
   width: 200px;
   height: auto;
   display: block;
-
 }
 
-/*Animation*/
+.cloud2 img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 60px;
+}
+
+.man {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.balloon {
+  width: 100px;
+  margin-top: 50px;
+  display: block;
+}
