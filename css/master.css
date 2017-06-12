@@ -26,6 +26,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 #pane-5 {
 
   background: linear-gradient(black 50%,skyblue);
+
 }
 
 #pane-4 {
@@ -81,37 +82,37 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   color: white;
 }
 
-.text {
-display: none;
 
-}
 
 /*Animation*/
 
 .man, .cloud1, .cloud2, .balloon, .ufo  {
   position: absolute;
 }
+.starfield{
+  z-index: 1;
+}
 
 .moon img{
-  width: 300px;
+  width: 400px;
   height: auto;
-  position: relative;
-  display: inline-block;
-  float: right;
+  z-index: 3;
 }
 
 .moon .textmoon{
   position: sticky;
   width: 300px;
-  border: 1px, white;
+  border: 5px, black;
   background-color: beige;
-  visibility: hidden;
-  float: right;
+  visibility:hidden;
+  float: inline-end;
+
 
 }
 
 .moon:hover .textmoon{
   visibility: visible;
+
 }
 
 
@@ -125,21 +126,23 @@ display: none;
   width: 200px;
   height: auto;
   display: block;
-  z-index: 0;
+  z-index: 3;
+  overflow-y: hidden;
 }
 
 .balloon {
   width: 100px;
   /*margin-top: 50px;*/
   display: block;
-  z-index: 1;
+  z-index: 2;
+
 }
 
 .cloud2 img {
   width: 200px;
   height: auto;
   display: block;
-  z-index: 2;
+  z-index: 1;
 }
 
 .man {
