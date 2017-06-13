@@ -50,4 +50,11 @@ $(document).ready(function() {
 
 
     // ----------------------- Deep Sea --------------------------------------------
-}
+
+      var left = $('.seadevil').offset().left;  // Get the calculated left position
+
+      $(".seadevil").css({left:left})  // Set the left to its calculated position
+           .animate({"left":"0px"}, "slow");
+
+
+  }
