@@ -32,9 +32,11 @@ $(document).ready(function() {
 
 
     $(".cloud1").animate({left: '1000px'}, 100000, 'linear');
-    $(".cloud2").animate({left: '1000px'}, 115000, 'linear');
+    $(".cloud2").animate({left: '1000px'}, 130000, 'linear');
 
-    $(".balloon").animate({left: '1000px'}, 70000, 'swing');
+
+    $(".balloon").animate({left: '2000px'}, 70000, 'swing');
+
 
 
 
@@ -51,10 +53,10 @@ $(document).ready(function() {
 
     // ----------------------- Deep Sea --------------------------------------------
 
-      var left = $('.seadevil').offset().left;  // Get the calculated left position
+      var left = $('.seadevil').offset().left;
 
-      $(".seadevil").css({left:left})  // Set the left to its calculated position
-           .animate({"left":"0px"}, "slow");
+      $('.seadevil').css({left:left}).animate({"left":"0px"}, "slow");
+
 
 
   }
